@@ -2,9 +2,25 @@
 //
 
 import React from 'react'
+// import links to use them
+import { Link } from 'react-router-dom'
+
+
+const linkStyle = {color: "# 1746A2"}
 
 export default function index() {
   return (
-    <div>index</div>
+   <>
+    <h1>Top TV</h1>
+    <em> All about TV</em>
+    <ul>
+      <li>
+        <Link to="/shows" style={linkStyle}>Shows</Link>
+      </li>
+      <li>
+        <Link to="/search" style={linkStyle}>Search</Link>
+      </li>
+    </ul>
+   </>
   )
 }
